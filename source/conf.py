@@ -17,7 +17,7 @@ from mantid.simpleapi import *
 """
 
 doctest_path = """
-r'C:\Backup\Backup_folder1\work\code\Mantid\DocTestData'
+r'C:\Backup\Backup_folder1\work\code\Mantid\git\usagedata'
 """
 
 import sys
@@ -27,6 +27,7 @@ import os
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('../'))
 sys.path.insert(0, r"C:\Backup\Backup_folder1\work\code\Mantid\builds\all\bin\Release")
 
 # -- General configuration ------------------------------------------------
@@ -43,6 +44,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
+    'sphinxext.usageExamples',
 ]
 
 # Add any paths that contain templates here, relative to this directory.

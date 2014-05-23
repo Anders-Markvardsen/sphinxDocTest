@@ -45,7 +45,7 @@ Example - Load ISIS Muon file, see `LoadMuonNexus <http://www.mantidproject.org/
 
 Example - Load Mantid processed Nexus file ISIS, see `LoadNexusProcessed <http://www.mantidproject.org/LoadNexusProcessed>`_ for more options:   
 
-.. testcode:: ExLoadNexusProcessed
+.. testcode:: ExLoadNexusProcessedWithLoadNexus
 
    # Load Mantid processed GEM data file
    ws = LoadNexus('GEM63437_Focussed_bank5.nxs') 
@@ -53,11 +53,11 @@ Example - Load Mantid processed Nexus file ISIS, see `LoadNexusProcessed <http:/
    # print out number of histograms (spectra)
    print ws.getNumberHistograms() 
 
-.. testcleanup:: ExLoadNexusProcessed
+.. testcleanup:: ExLoadNexusProcessedWithLoadNexus
 
    DeleteWorkspace(ws)
    
-.. testoutput:: ExLoadNexusProcessed
+.. testoutput:: ExLoadNexusProcessedWithLoadNexus
    :hide:
    
    1      

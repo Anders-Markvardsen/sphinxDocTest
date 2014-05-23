@@ -1,9 +1,7 @@
 Usage
 -----
 
-To run these usage example please first download the 
-`TrainingCourseData <http://download.mantidproject.org/download.psp?f=/SampleData/TrainingCourseData.zip>`_, 
-and add these to your path. In MantidPlot this is done using `Manage User Directories <http://www.mantidproject.org/ManageUserDirectories>`_.
+.. include:: howToDownloadUsageData.txt
 
 **Example - Load ISIS histogram Nexus file:**
 (see `LoadISISNexus <http://www.mantidproject.org/LoadISISNexus>`_ for more options)   
@@ -67,7 +65,7 @@ Output:
    
 Example - Load Mantid processed Nexus file ISIS, see `LoadNexusProcessed <http://www.mantidproject.org/LoadNexusProcessed>`_ for more options:   
 
-.. testcode:: ExLoadNexusProcessed
+.. testcode:: ExLoadNexusProcessedWithLoad
 
    # Load Mantid processed GEM data file  
    ws = Load('GEM63437_Focussed_bank5.nxs') 
@@ -75,11 +73,11 @@ Example - Load Mantid processed Nexus file ISIS, see `LoadNexusProcessed <http:/
    # print out number of histograms (spectra)
    print ws.getNumberHistograms() 
 
-.. testcleanup:: ExLoadNexusProcessed
+.. testcleanup:: ExLoadNexusProcessedWithLoad
 
    DeleteWorkspace(ws)
    
-.. testoutput:: ExLoadNexusProcessed
+.. testoutput:: ExLoadNexusProcessedWithLoad
    :hide:
    
    1   
