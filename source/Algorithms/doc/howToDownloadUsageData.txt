@@ -1,5 +1,6 @@
 .. note::
 
+   NOTE LINK TO USAGEDATA DOES NOT EXIST AS OF THIS WRITING
    To run these usage example please first download the 
-   `TrainingCourseData <http://download.mantidproject.org/download.psp?f=/SampleData/TrainingCourseData.zip>`_, 
+   `UsageData <http://download.mantidproject.org/download.psp?f=/SampleData/UsageData.zip>`_, 
    and add these to your path. In MantidPlot this is done using `Manage User Directories <http://www.mantidproject.org/ManageUserDirectories>`_.
