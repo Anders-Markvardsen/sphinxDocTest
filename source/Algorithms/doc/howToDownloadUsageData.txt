@@ -1,6 +1,5 @@
 .. note::
 
-   NOTE LINK TO USAGEDATA DOES NOT EXIST AS OF THIS WRITING
    To run these usage example please first download the 
-   `UsageData <http://download.mantidproject.org/download.psp?f=/SampleData/UsageData.zip>`_, 
+   `UsageData <https://github.com/mantidproject/usagedata>`_, 
    and add these to your path. In MantidPlot this is done using `Manage User Directories <http://www.mantidproject.org/ManageUserDirectories>`_.

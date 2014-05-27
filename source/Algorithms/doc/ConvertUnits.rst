@@ -1,4 +1,0 @@
-.. algorithm:: ConvertUnits
-
-Description
------------
