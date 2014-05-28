@@ -101,3 +101,30 @@ Output:
    The rebinned X values are: [ 0.  2.  4.  6.  8.]
    The rebinned Y values are: [ 2.  2.  2.  2.]
 
+**Example - use option PreserveEvents:**
+   
+.. testcode:: ExEventRebin
+
+   # create some event workspace
+   ws = CreateSampleWorkspace(WorkspaceType="Event")
+
+   print "What type is the workspace before 1st rebin: " + str(type(ws)) 
+   # rebin from min to max with size bin = 2 preserving event workspace (default behaviour)
+   ws = Rebin(ws, 2)   
+   print "What type is the workspace after 1st rebin: " + str(type(ws)) 
+   ws = Rebin(ws, 2, PreserveEvents=False)   
+   print "What type is the workspace after 2nd rebin: " + str(type(ws)) 
+   # note you can also check the type of a workspace using: print isinstance(ws, IEventWorkspace)   
+
+.. testcleanup:: ExEventRebin
+
+   DeleteWorkspace(ws)
+
+Output:
+
+.. testoutput:: ExEventRebin
+   
+   What type is the workspace before 1st rebin: <class 'mantid.api._api.IEventWorkspace'>
+   What type is the workspace after 1st rebin: <class 'mantid.api._api.IEventWorkspace'>
+   What type is the workspace after 2nd rebin: <class 'mantid.api._api.MatrixWorkspace'>     
+
