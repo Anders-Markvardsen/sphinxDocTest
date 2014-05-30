@@ -30,7 +30,7 @@ Output:
    
    The 51st y-value is: 900.709
 
-**Example - Diffraction focussing of HRPD data:**
+**Example - Demonstrating option PreserveEvents:**
 
 .. testcode:: ExEventFocussing
 
